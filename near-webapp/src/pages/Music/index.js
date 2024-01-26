@@ -1,13 +1,15 @@
-import * as React from 'react';
+import React from 'react';
+import Sidebar from '../../components/Sidebar'
+import Navbar from '../../components/Navbar'
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
-const drawerWidth = 240;
-
-export default function Music() {
+function Music() {
   return (
     <Box sx={{ display: 'flex' }}>
+      <Navbar/>
+      <Sidebar/>
       <Box
         component="main"
         sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
@@ -44,3 +46,5 @@ export default function Music() {
     </Box>
   );
 }
+
+export default Music;
